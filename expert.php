@@ -1,6 +1,10 @@
 <?php
 declare(strict_types=1);
 
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
 
 // Below are several code blocks, read them, understand them and try to find whats wrong.
 // Once this exercise is finished, we'll go over the code all together and we can share how we debugged the following problems.
@@ -39,7 +43,7 @@ new_exercise(3);
 // === Exercise 3 ===
 // This should echo ` "Debugged !" `, fix it so that that is the literal text echo'ed
 
-// We need to use ' ' instead of " "
+// We need to use ' ' instead of “ ”
 
 $str = 'Debugged ! Also very fun';
 echo substr($str, 0, 10);
@@ -118,7 +122,7 @@ function randomHeroName()
     echo $randname;
 }
 
-echo "Here is the name: " . combineNames(); */
+echo "Here is the name: " . combineNames();
 
 new_exercise(7);
 function copyright(int $year) {
@@ -139,7 +143,7 @@ function login(string $email, string $password) {
     return 'No access';
 }
 /* do not change any code below */
-//should greet the user with his full name (John Smith)
+/* //should greet the user with his full name (John Smith)
 echo login('john@example.be', 'pocahontas');
 //Should say: no access
 echo login('john@example.be', 'dfgidfgdfg');
@@ -147,7 +151,7 @@ echo login('john@example.be', 'dfgidfgdfg');
 echo login('wrong@example', 'wrong');
 /* You can change code again */
 
-new_exercise(9);
+/*new_exercise(9);
 function isLinkValid(string $link) {
     $unacceptables = array('https:','.doc','.pdf', '.jpg', '.jpeg', '.gif', '.bmp', '.png');
 
@@ -180,4 +184,4 @@ for($i=0; $i <= count($areTheseFruits); $i++) {
         unset($areTheseFruits[$i]);
     }
 }
-var_dump($areTheseFruits);//do not change this
+var_dump($areTheseFruits);//do not change this */
